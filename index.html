@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Cliente">
+		<meta name="author" content="Jaime Sorey Vázquez - jaimesorey@gmail.com">
+		<meta name="keywords" content="dokify, ejercicio, maquetación, diseño">
+
+		<title>Dokify</title>
+
+		<link rel="shortcut icon" href="../img/favicon.png">
+		<link href="./css/general.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><!-- @J Con html5 el type por defecto es text/javascript no haciendo falta definirlo -->
+		<script src="./js/general.js"></script>
+		
+	</head>
+
+	<body>
+	
+		<div class="area">
+
+			<header>
+			
+				<div class="header-top">
+			
+					<div class="header-left">
+					
+						<ul class="ul-header-left">
+					
+							<li class="li-header-logo"><img src="./img/logo.png" alt="logo"></li>
+							<li class="li-header-search"><input type="text" placeholder="Buscar" autofocus></li>
+							<li class="li-header-help"><a href="#">Ayuda</a></li>
+							
+						</ul>
+						
+					</div><!-- cierre header-left -->
+
+					<div class="header-notify">
+					
+						<div class="red-box">
+						
+							<span id="notify-counter">3</span>
+
+							<div class="hover-box">
+								
+								<ul class="notify-box">
+								
+									<li class="title-notify">
+									
+										<img src="./img/notification-icon.png" alt="notificaciones" class="red-bell">
+										Notificaciones
+									
+									</li>
+									
+									<li class="element-notify" draggable="true">
+									
+										<div class="element-notify-img">
+											<img src="./img/drag-icon.png" alt="arrastrar">
+										</div><!-- cierre element-notify-img -->
+										<div class="element-notify-desc">
+											Has añadido un nuevo documento
+										</div><!-- cierre element-notify-img -->
+										<div class="element-notify-text">
+											Materials with seamless deliverables. Objectively enable next-generation...
+										</div><!-- cierre element-notify-img -->
+										
+									</li>
+									<li class="element-notify" draggable="true">
+									
+										<div class="element-notify-img">
+											<img src="./img/drag-icon.png" alt="arrastrar">
+										</div><!-- cierre element-notify-img -->
+										<div class="element-notify-desc">
+											Tienes un nuevo mensaje
+										</div><!-- cierre element-notify-img -->
+										<div class="element-notify-text">
+											Enable next-generation collaboration and idea-sharing for
+										</div><!-- cierre element-notify-img -->
+										
+									</li>
+									<li class="element-notify" draggable="true">
+									
+										<div class="element-notify-img">
+											<img src="./img/drag-icon.png" alt="arrastrar">
+										</div><!-- cierre element-notify-img -->
+										<div class="element-notify-desc">
+											Has añadido un nuevo documento
+										</div><!-- cierre element-notify-img -->
+										<div class="element-notify-text">
+											Materials with seamless deliverables. Objectively enable next-generation...
+										</div><!-- cierre element-notify-img -->
+										
+									</li>
+									
+									<li class="element-waste over">
+									
+										<div class="waste-notify-img">
+											<img src="./img/paper-icon.png" alt="arrastrar">
+										</div><!-- cierre element-notify-img -->
+										<div class="waste-notify-desc">
+											Arrastra aquí las notificaciones para eliminarlas
+										</div><!-- cierre element-notify-img -->
+										
+									</li>
+								
+								</ul>
+
+							</div><!-- cierre hover-box -->
+						
+						</div><!-- cierre red-box -->
+					
+					</div><!-- cierre header-notify -->
+
+					<a href=".">
+					
+						<div class="header-right">
+							
+							<p>
+								<img src="./img/menu/home-icon.png" class="nav-ico" alt="home">
+								dokify demo
+							</p>
+							
+						</div><!-- cierre header-right -->
+						
+					</a>
+				
+				</div><!-- cierre header-top -->
+				
+				<div class="header-bottom">
+				
+					<div class="header-logo">
+						<img src="./img/company-logo.png" alt="logo">
+					</div>
+					
+					<div class="header-text">
+						<h1>Dokify demo</h1>
+						<h5>CIF 50444555</h5>
+					</div>
+					
+				</div>
+					
+			</header>
+			
+			<div class="bigbox">
+			
+				<nav>
+				
+					<ul>
+					
+						<a href="#"><li class="selected"><img src="./img/menu/dashboard-icon-selected.png" class="nav-ico" alt="dashboard">	dashboard	</li></a>
+						<a href="#"><li><img src="./img/menu/document-icon.png" class="nav-ico" alt="documentos">			documentos	</li></a>
+						<a href="#"><li><img src="./img/menu/client-icon.png" class="nav-ico" alt="clientes">				clientes	</li></a>
+						<a href="#"><li><img src="./img/menu/employe-icon.png" class="nav-ico" alt="empleados">				empleados	</li></a>
+						<a href="#"><li><img src="./img/menu/machine-icon.png" class="nav-ico" alt="máquinas">				máquinas	</li></a>
+					
+					</ul>
+				
+				</nav>
+				
+				<main>
+				
+					<div class="main-1" id="main-documentos">
+					
+						<div class="main-title">
+							documentos 
+							<img src="./img/menu/document-icon.png" class="main-ico" alt="documentos">
+						</div>
+						
+						<div class="main-graph">
+							<img src="./img/graph-1.png" class="ico-graph" alt="gráfico documentos">
+						</div>
+						
+						<div class="main-note">
+							1 pendiente
+							<img src="./img/bullet.png">
+						</div>
+					
+					</div><!-- cierre main-documentos -->
+				
+					<div class="main-1" id="main-empleados">
+					
+						<div class="main-title">
+							empleados
+							<img src="./img/menu/employe-icon.png" class="main-ico" alt="empleados">
+						</div>
+						
+						<div class="main-graph">
+							<img src="./img/graph-2.png" class="ico-graph" alt="gráfico empleados">
+						</div>
+						
+						<div class="main-note">
+							1 cancelado
+							<img src="./img/bullet-cancel.png">
+						</div>
+					
+					</div><!-- cierre main-empleados -->
+					
+					<div class="main-1" id="main-maquinas">
+					
+						<div class="main-title">
+							máquinas
+							<img src="./img/menu/machine-icon.png" class="main-ico" alt="máquinas">
+						</div>
+						
+						<div class="main-graph">
+							<img src="./img/graph-1.png" class="ico-graph" alt="gráfico máquinas">
+						</div>
+						
+						<div class="main-note">
+							pendiente
+							<img src="./img/bullet-success.png">
+						</div>
+					
+					</div><!-- cierre main-maquinas -->
+				
+					<div class="main-2" id="main-clientes">
+					
+						<div class="main-title">
+							clientes
+							<img src="./img/menu/client-icon.png" class="main-ico" alt="clientes">
+						</div>
+						
+						<div class="main-client">
+						
+							<div class="main-graph">
+								<img src="./img/client/carrefour.png" class="ico-graph" alt="cliente">
+							</div>
+							
+							<div class="main-note">
+								Carrerfour
+								<img src="./img/bullet-success.png">
+							</div>
+						
+						</div>
+						
+						<div class="main-client">
+						
+							<div class="main-graph">
+								<img src="./img/client/carrefour.png" class="ico-graph" alt="cliente">
+							</div>
+							
+							<div class="main-note">
+								Carrerfour
+								<img src="./img/bullet-success.png">
+							</div>
+						
+						</div>
+						
+						<div class="main-client">
+						
+							<div class="main-graph">
+								<img src="./img/client/carrefour.png" class="ico-graph" alt="cliente">
+							</div>
+							
+							<div class="main-note">
+								Carrerfour
+								<img src="./img/bullet-success.png">
+							</div>
+						
+						</div>
+						
+						<div class="main-client">
+						
+							<div class="main-graph">
+								<img src="./img/client/carrefour.png" class="ico-graph" alt="cliente">
+							</div>
+							
+							<div class="main-note">
+								Carrerfour
+								<img src="./img/bullet-success.png">
+							</div>
+						
+						</div>
+					
+					</div><!-- cierre main-clientes -->
+
+					<div class="main-3" id="main-informe">
+					
+						<div class="main-informe-img">
+							<img src="./img/report-img.png" class="ico-graph" alt="gráfico documentos">
+						</div>
+						
+						<div class="main-informe-text">
+							<strong>Informe Resumen de Cumplimentación.</strong>
+							<p>Materials with seamless deliverables. Objectively enable next-generation collaboration</p>
+							<a href="#">Descargar informe</a>
+						</div>
+					
+					</div><!-- cierre main-informe -->
+					
+				</main>
+				
+				<aside>
+				
+					<div class="main-title">
+						noticias
+						<img src="./img/menu/news-icon.png" class="main-ico" alt="noticias">
+					</div>
+					
+					<article>
+						<p class="news-title">
+							Proactively synergize customer directed
+						</p>
+						<p class="news-text">
+						Materials with seamles deliverables. Objetively enable next-generation collaboration and idea-sharing for...
+						</p>
+					</article>
+				
+					<article>
+						<p class="news-title">
+							Proactively synergize customer directed
+						</p>
+						<p class="news-text">
+						Materials with seamles deliverables. Objetively enable next-generation collaboration and idea-sharing for...
+						</p>
+					</article>
+				
+					<article>
+						<p class="news-title">
+							Proactively synergize customer directed
+						</p>
+						<p class="news-text">
+						Materials with seamles deliverables. Objetively enable next-generation collaboration and idea-sharing for...
+						</p>
+					</article>
+				
+				</aside>
+				
+			</div><!-- cierre bigbox -->
+			
+			<foot>
+			
+				<div class="foot-left">
+					<ul class="ul-foot">
+						<a href="#"><li>seguridad</li></a>
+						<a href="#"><li>experiencia</li></a>
+						<a href="#"><li>planes</li></a>
+						<a href="#"><li>servicios</li></a>
+					</ul>
+				</div>
+			
+				<div class="foot-middle">
+					<img src="./img/logo-foot.png" alt="logo">
+				</div>
+			
+				<div class="foot-right">
+					<ul class="ul-foot">
+						<a href="#"><li>estado</li></a>
+						<a href="#"><li>blog</li></a>
+						<a href="#"><li>términos</li></a>
+						<a href="#"><li>política</li></a>
+					</ul>
+				</div>
+			
+			</foot>
+		
+		</div><!-- cierre area -->
+
+	</body>
+	
+</html>
+
+
+
+
+
